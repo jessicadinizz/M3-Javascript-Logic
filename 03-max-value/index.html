@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function maxValue(values) {
+            var maior = values[0];
+
+            for (i = 0; i < values.length; i++) {
+                if (maior < values[i]) {
+                       maior = values[i];
+                }
+            }
+        return maior;
+        }
+
+        console.log(maxValue([4,6,12,5]), 12)
+        console.log(maxValue([9, 234, 312, 999, 21 , 2311]), 2311) 
+        console.log(maxValue([533, 234, 23423, 32, 432]), 23423) 
+        console.log(maxValue([5, 4, 3, 2, 1]), 5)
+
+    </script>
+</body>
+
+</html>

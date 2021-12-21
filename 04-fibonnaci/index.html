@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonnaci</title>
+</head>
+
+<body>
+
+    <script>
+
+        function fib(values) {
+            var result = 0;
+
+                if(values <= 1){
+                    result = values
+                } else{
+                    result = fib(values-1) + fib(values-2)
+                }
+
+        return result;
+        }
+
+        console.log(fib(0), 0)
+        console.log(fib(1), 1) 
+        console.log(fib(2), 1) 
+        console.log(fib(3), 2) 
+        console.log(fib(4), 3)
+        console.log(fib(5), 5) 
+        console.log(fib(35), 9227465) 
+        console.log(fib(46), 1836311903)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function isAnagram(test, original) {
+                test = test.toLowerCase();
+                original = original.toLowerCase();
+
+                if (test.length != original.length) {
+                    return false;
+                }
+                let cont1, cont2;
+                for (let i = 0; i < original.length; i++) {
+                    cont1 = test.split(test[i]).length;
+                    cont2 = original.split(test[i]).length;
+
+                    return cont1 == cont2;
+                }
+                }
+
+
+
+        console.log(isAnagram("foefet", "toffee"), true); 
+        console.log(isAnagram("Buckethead", "DeathCubeK"), true); 
+        console.log(isAnagram("Twoo", "WooT"), true); 
+
+         console.log(isAnagram("dumble", "bumble"), false); 
+         console.log(isAnagram("ound", "round"), false); 
+         console.log(isAnagram("apple", "pale"), false); 
+
+    
+
+    </script>
+</body>
+
+</html>

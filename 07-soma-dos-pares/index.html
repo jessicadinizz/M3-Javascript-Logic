@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function sum(numbers) {
+            var soma = 0;
+
+            for(i = 0; i < numbers.length; i++){
+                if(numbers[i] % 2 === 0){
+                    soma = soma + numbers[i]
+                }
+
+            }
+
+
+            return soma
+        }
+
+        // Resultados esperados
+        console.log(sum([4, 6, 12, 5]), 22) // 22 
+        console.log(sum([9, 234, 312, 999, 21, 2311]), 546) // 546 
+        console.log(sum([533, 234, 23423, 32, 48876]), 49142) // 49142  
+        console.log(sum([5, 4, 3, 2, 1]), 6) // 6
+
+    </script>
+</body>
+
+</html>
